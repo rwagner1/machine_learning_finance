@@ -1,12 +1,13 @@
 # ml_finance
 
+
 This repository contains proposed solutions to some assignments from Udacity's online course on Machine Learning in Finance https://classroom.udacity.com/courses/ud501
 
 Please note that the code has not been verified by Udacity and there is no guarantee for 100% correctness. Instead, these are my personal suggestions how to solve the problem. Therefore any feedback is more than welcome.
 
 Below is a summary of some technical terms that are explained throughout the course and might be used in the coding examples.
 
-Rolling mean:
+<bRolling mean:/b>
 Standard moving average with chosen window size. Smoothing curve that slightly lags behind actual values. When rolling mean and actual price cross, might be a selling or buying sign. Significance can be obtained with Bollinger bands.
 
 Bollinger bands:
