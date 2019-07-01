@@ -1,9 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import os
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -11,23 +5,12 @@ import seaborn as sns
 import numpy as np
 import scipy.optimize as spo
 
-
-# In[2]:
-
-
 base_dir = '' # add your path to the directory where your .csv files are located
-
-
-# In[3]:
-
 
 # settings for plots, you might want to adjust these
 figsize=(10, 10)
 symcol = {'SPY':'blue', 'GOLD':'gold', 'GOOG':'green', 'AAPL':'red'}
 sns.set(context='talk')
-
-
-# In[4]:
 
 
 """Utility functions"""
@@ -72,8 +55,6 @@ def compute_daily_returns(df):
     daily_returns = df[1:].div(df[:-1].values, fill_value=0)-1 # use .values to access underlying numpy array, otherwise pandas will try and match indices which undoes the shifting. omit index 0 since always 0
     return daily_returns
 
-
-# In[5]:
 
 
 """"Portfolio optimizer (sharpe ratio)"""
@@ -140,16 +121,3 @@ if __name__ == "__main__":
     
     
     
-
-
-# In[12]:
-
-
-## test optimizer
-
-
-# In[ ]:
-
-
-
-
